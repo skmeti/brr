@@ -1,0 +1,91 @@
+/*---------------EXTRA STYLES--------------------*/
+
+/*--------------GENERAL STYLES-------------------*/
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*NEEDED FOR AOS*/
+    overflow-x:hidden;
+}
+a:active, a {
+	outline: none; 
+}
+/*--------------HEADER STYLES-------------------*/
+.bg-semitransp{
+	background-color: rgba(250, 250, 250, 0.9);
+	-webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s;
+}
+.scrolled{
+	background-color: white;
+}
+.logoimg{
+	width:200px;
+	-webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s;
+}
+.scrolled .navbar-brand .logoimg{
+	width:100px;
+}
+.navbar-collapse .navbar-nav{
+	font-size:18px;
+}
+#tiny-nav{
+	border-bottom: 1px solid #e6e6e6;
+}
+#tiny-nav a{
+	border-right: 1px solid #e6e6e6;
+}
+/*----------------CAROUSEL-----------------*/
+.carousel-caption h1, .carousel-caption p{
+	background-color: rgba(0, 0, 0, 0.7);
+	width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius:10px;
+}
+/*POSITIONING AN ABSOLUTE TO THE CENTER OF THE PARENT*/
+#carousel-arrow{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*----------------HOMEPAGE-----------------*/
+#home-offer img{
+	width:200px;
+	height:200px;
+}
+/*----------------DESTINATION MAP-----------------*/
+.moretip{
+	font-size:25px;
+}
+.ppcont{
+	width:133px;
+}
+.leaflet-popup-content{
+    margin:-1px -2px !important;
+}
+.leaflet-popup-close-button{
+	color: #ffffff !important;
+}
+/*----------------404-----------------*/
+.error-404{
+	font-size: 100px;
+	color: #FFA500;
+}
+/*----------------RESPONSIVE ADDITIONS-----------------*/
+@media (max-width: 316px){
+/*align nav content to center on mobile*/
+	.navbar-expand-lg{
+		justify-content: center;
+	}
+}
+@media (max-width: 991.98px) {
+	#mapid{
+		width:80% !important;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
